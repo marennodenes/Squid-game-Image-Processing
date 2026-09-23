@@ -1,0 +1,12 @@
+# Visual Studio build output and caches
+SRC/Debug/
+SRC/Release/
+SRC/ipch/
+.vs/
+*.sdf
+*.ncb
+*.suo
+*.user
+*.aps
+*.VC.db
+*.opendb
