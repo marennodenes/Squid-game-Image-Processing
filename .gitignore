@@ -10,3 +10,9 @@ SRC/ipch/
 *.aps
 *.VC.db
 *.opendb
+
+# CxImage build output
+cximage/x86/bin/
+cximage/x86/xbuild/
+cximage/x86/lib/*
+!cximage/x86/lib/*_wd.lib

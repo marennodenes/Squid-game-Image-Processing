@@ -21,22 +21,7 @@
     <ClCompile Include="ChildFrm.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DlgBrightnessOption.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="DlgCompositeOption.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DlgContrastStretchOption.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DlgHisto.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DlgIntensityTransformOption.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DlgMosaicOption.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ImageProcessing.cpp">
@@ -54,9 +39,6 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="xTargetButton.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Composite.h">
@@ -65,22 +47,7 @@
     <ClInclude Include="ChildFrm.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="DlgBrightnessOption.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="DlgCompositeOption.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="DlgContrastStretchOption.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="DlgHisto.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="DlgIntensityTransformOption.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="DlgMosaicOption.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="ImageProcessing.h">
@@ -104,20 +71,8 @@
     <ClInclude Include="targetver.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="xTargetButton.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\B.ico">
-      <Filter>리소스 파일</Filter>
-    </None>
-    <None Include="res\G.ico">
-      <Filter>리소스 파일</Filter>
-    </None>
-    <None Include="res\Gray.ico">
-      <Filter>리소스 파일</Filter>
-    </None>
     <None Include="res\ImageProcessing.ico">
       <Filter>리소스 파일</Filter>
     </None>
@@ -127,10 +82,6 @@
     <None Include="res\ImageProcessingDoc.ico">
       <Filter>리소스 파일</Filter>
     </None>
-    <None Include="res\R.ico">
-      <Filter>리소스 파일</Filter>
-    </None>
-    <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ImageProcessing.rc">

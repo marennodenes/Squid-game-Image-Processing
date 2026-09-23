@@ -5,7 +5,6 @@
 #include "stdafx.h"
 #include "ImageProcessing.h"
 
-#include "MainFrm.h"
 #include "ImageProcessingDoc.h"
 #include "ImageProcessingView.h"
 
@@ -23,7 +22,6 @@ BEGIN_MESSAGE_MAP(CImageProcessingView, CScrollView)
 	ON_COMMAND(ID_FILE_PRINT, &CScrollView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CScrollView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CScrollView::OnFilePrintPreview)
-	ON_WM_DESTROY()
 END_MESSAGE_MAP()
 
 // CImageProcessingView 생성/소멸
@@ -103,11 +101,6 @@ void CImageProcessingView::OnInitialUpdate()
 				min(rMainCl.bottom-(rFrame.top-rMainFr.top+12),y),
 				SWP_NOMOVE|SWP_NOZORDER);
 		}
-
-		CMainFrame* pMain = (CMainFrame*) AfxGetMainWnd();
-		if (pMain->GetHistogramDlg()->IsWindowVisible()){
-			pMain->GetHistogramDlg()->Invalidate();
-		}
 	}
 }
 
@@ -122,22 +115,8 @@ void CImageProcessingView::OnUpdate(CView* pSender, LPARAM lHint, CObject* pHint
 		}
 	}
 
-	// TODO: 히스토그램 창 무효화 // DONE
-	((CMainFrame*)AfxGetMainWnd())->GetHistogramDlg()->Invalidate();
-
 	CScrollView::OnUpdate(pSender, lHint, pHint);
 }
-
-void CImageProcessingView::OnActivateView(BOOL bActivate, CView* pActivateView, CView* pDeactiveView)
-{
-	// TODO: 히스토그램 창 무효화 // DONE
-	if (bActivate){
-		((CMainFrame*)AfxGetMainWnd())->GetHistogramDlg()->Invalidate();
-	}
-
-	CScrollView::OnActivateView(bActivate, pActivateView, pDeactiveView);
-}
-
 
 // CImageProcessingView 인쇄
 
@@ -180,15 +159,4 @@ CImageProcessingDoc* CImageProcessingView::GetDocument() const // 디버그되지 않�
 
 
 // CImageProcessingView 메시지 처리기
-
-
-
-void CImageProcessingView::OnDestroy()
-{
-	CScrollView::OnDestroy();
-
-	// TODO: 히스토그램 창 무효화 // DONE
-	((CMainFrame*)AfxGetMainWnd())->GetHistogramDlg()->Invalidate();
-}
-
 

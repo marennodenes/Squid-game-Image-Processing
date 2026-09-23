@@ -3,7 +3,6 @@
 //
 
 #pragma once
-#include "DlgHisto.h"
 
 class CMainFrame : public CMDIFrameWnd
 {
@@ -13,11 +12,6 @@ public:
 
 // 특성입니다.
 public:
-	inline DlgHisto* GetHistogramDlg() { return &m_dlgHistogram; }
-
-private:
-	DlgHisto m_dlgHistogram;
-
 // 작업입니다.
 public:
 
@@ -42,5 +36,4 @@ protected:
 	DECLARE_MESSAGE_MAP()
 
 };
-
 

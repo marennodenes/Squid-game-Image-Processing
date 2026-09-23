@@ -26,7 +26,6 @@ public:
 protected:
 	virtual void OnInitialUpdate(); // 생성 후 처음 호출되었습니다.
 	virtual void OnUpdate(CView* /*pSender*/, LPARAM /*lHint*/, CObject* /*pHint*/);
-	virtual void OnActivateView(BOOL bActivate, CView* pActivateView, CView* pDeactiveView);
 
 	virtual BOOL OnPreparePrinting(CPrintInfo* pInfo);
 	virtual void OnBeginPrinting(CDC* pDC, CPrintInfo* pInfo);
@@ -44,7 +43,6 @@ protected:
 
 // 생성된 메시지 맵 함수
 public:
-	afx_msg void OnDestroy();
 
 	DECLARE_MESSAGE_MAP()
 };
