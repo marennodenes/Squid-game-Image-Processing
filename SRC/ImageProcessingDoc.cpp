@@ -155,6 +155,5 @@ void CImageProcessingDoc::OnProcessComposite()
 		return;
 	}
 
-	SetModifiedFlag(TRUE);
 	UpdateAllViews(NULL);
 }
