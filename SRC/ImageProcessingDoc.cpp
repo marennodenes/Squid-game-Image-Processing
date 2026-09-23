@@ -28,7 +28,6 @@ END_MESSAGE_MAP()
 
 CImageProcessingDoc::CImageProcessingDoc()
 {
-	//// TODO: Add an one-time generating code here
 	m_pImage = NULL;
 }
 
@@ -43,7 +42,6 @@ BOOL CImageProcessingDoc::OnOpenDocument(LPCTSTR lpszPathName)
 	if (!CDocument::OnOpenDocument(lpszPathName))
 		return FALSE;
 
-	// TODO: load imagefile // DONE
 	m_pImage = new CxImage;
 	m_pImage->Load(lpszPathName, FindType(lpszPathName));
 
@@ -56,7 +54,6 @@ BOOL CImageProcessingDoc::OnNewDocument()
 	if (!CDocument::OnNewDocument())
 		return FALSE;
 
-	//// TODO: Add a re-initialization code here
 	//// SDI documents will reuse this article
 
 	return TRUE;
@@ -69,11 +66,9 @@ void CImageProcessingDoc::Serialize(CArchive& ar)
 {
 	if (ar.IsStoring())
 	{
-		//// TODO: Add a saving code here
 	}
 	else
 	{
-		//// TODO: Add a loading code here
 	}
 }
 
